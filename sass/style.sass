@@ -1,0 +1,315 @@
+body
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Lato', sans-serif
+a
+    text-decoration: none
+
+input
+    outline: none
+
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+h1,h2,h3,h4,h5,h6
+    margin: 0
+
+.container
+    max-width: 1060px
+    margin: 0 auto
+
+.container__full
+    max-width: 1262px
+    margin: 0 auto
+
+.header
+    padding-top: 56px
+    background-image: url('../img/Hero.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    &__bottom
+        padding: 176px 0 270px 0
+    &__input
+        background: transparent url('../img/Oval.svg') no-repeat left 6px
+        border: 0
+        background-size: 20px
+        width: 297px
+        margin-right: 60px
+        border-bottom: 2px solid #BFC0C5
+        padding-left: 43px
+        padding-bottom: 23px
+        font-weight: 500
+        color: #fff
+        font-size: 18px
+        line-height: 24px
+        &::placeholder
+            color: #fff
+            font-size: 18px
+            line-height: 24px
+    &__title
+
+        font-weight: 500
+        font-size: 50px
+        line-height: 60px
+        color: #fff
+        max-width: 619px
+        margin-bottom: 22px
+    &__text
+        font-weight: normal
+        font-size: 16px
+        line-height: 24px
+        color: #fff
+        max-width: 546px
+        margin-bottom: 60px
+    &__form-info
+        display: flex
+        flex-wrap: wrap
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        flex-wrap: wrap
+    &__menu
+        display: flex
+        flex-wrap: wrap
+        &-item
+            margin-right: 82px
+            &:last-child
+                margin-right: 0
+        &-link
+            font-size: 18px
+            line-height: 24px
+            color: #fff
+            &:active
+                opacity: 0.75
+    &__form-btn
+        padding: 15px 40px
+        font-weight: 500
+        font-size: 24px
+        line-height: 29px
+        background: #1B7DFF
+        color: #fff
+        border: 0
+        cursor: pointer
+
+.intro
+    &__title
+        font-weight: 500
+        font-size: 50px
+        line-height: 60px
+        color: #fff
+
+.main
+    margin: 0 auto
+    margin-bottom: 180px
+    width: 1262px
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993)
+    padding-bottom: 50px
+    &__title
+        font-weight: 500
+        font-size: 35px
+        line-height: 42px
+        padding: 93px 0 88px 0
+        background-color: #fff
+
+    &__cards
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 55px
+
+.link__more
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    color: #006DFE
+    padding-right: 60px
+    position: relative
+    &::after
+        content: url('../img/Shape.svg')
+        position: absolute
+        right: 0
+.main__card
+    &-title
+        font-weight: 500
+        font-size: 18px
+        color: #000000
+        line-height: 24px
+    &-text
+        font-size: 16px
+        line-height: 24px
+        font-style: normal
+        font-weight: normal
+        max-width: 315px
+
+.odigo__title
+    font-weight: 500
+    font-size: 35px
+    font-weight: 500
+    line-height: 42px
+    padding-bottom: 7px
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        width: 253px
+        height: 3px
+        background: #006DFE
+        bottom: 0
+        left: 0
+
+.galery
+    margin-bottom: 130px
+    &__next
+        margin-bottom: 36px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__box
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        grid-gap: 10px
+        &-text
+            position: absolute
+            left: 32px
+            bottom: 27px
+            font-family: Lato
+            font-style: normal
+            font-weight: bold
+            font-size: 50px
+            line-height: 60px
+            color: #fff
+            z-index: 3
+        &-item
+            position: relative
+            &::after
+                display: block
+                content: ''
+                position: absolute
+                background: rgba(21, 24, 36, 0.4)
+                width: inherit
+                height: 354px
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                z-index: 2
+            img
+                width: 100%
+                object-fit: cover
+                height: 354px
+                &:hover
+                    transform: scale(1.1)
+        &-top
+            grid-column: span 3
+        &-bottom
+            grid-column: span 2
+
+.tour
+    margin-bottom: 140px
+
+.tour__inner
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    align-items: center
+    grid-row-gap: 70px
+    grid-column-gap: 100px
+    &-title
+        margin-bottom: 45px
+        font-style: normal
+        font-weight: 500
+        font-size: 30px
+        line-height: 40px
+        width: 408px
+    &-text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 24px
+        width: 520px
+        margin-bottom: 58px
+
+.visit
+    margin-bottom: 90px
+    &__cards
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 68px
+    &__card
+        &-img
+            img
+                display: block
+                position: relative
+        &-title
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 24px
+        &-text
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 30px
+        &-link
+            padding: 12px 20px
+            background: #006DFE
+            color: #fff
+        &-like
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+        &-comment
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+        &-stats
+            background: rgba(21, 24, 36, 0.6)
+            position: absolute
+            display: flex
+            bottom: 0
+            align-items: center
+
+.play
+    position: relative
+    background: url('../img/play.jpg') no-repeat
+    background-size: cover
+    height: 609px
+    &::before
+        content: url('../img/play-video.svg')
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translateX(-50%)
+        cursor: pointer
+
+.footer
+    background: #0E1D28
+    padding: 120px 0
+    &__container
+        max-width: 1078px
+        margin: auto
+    &__inner
+        display: flex
+        justify-content: space-between
+        &-el
+            display: flex
+    &__company
+        margin-left: 140px
+        &-link
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 24px
+            color: #fff
+        &-title
+            font-style: normal
+            font-weight: 500
+            font-size: 18px
+            line-height: 24px
+            color: #fff
